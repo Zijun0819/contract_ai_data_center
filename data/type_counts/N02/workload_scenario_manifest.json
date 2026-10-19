@@ -1,0 +1,269 @@
+{
+  "schema": "two_type_workload_scenarios_v1",
+  "created_at_utc": "2026-10-02T12:34:26.337079+00:00",
+  "source_config": "../../../config/default.yaml",
+  "source_config_sha256": "45de9b6bd95936dd84360f12c0828971eccc6f9f15f165c638224e02909dc50f",
+  "target_config": "../../../config/type_counts/N02.yaml",
+  "target_config_sha256": "b3ddbb9cefded067b691348678e3f3e2a1e799e28807f5bf911d305b2d0f4336",
+  "type_lambdas": [
+    0.1,
+    2.5
+  ],
+  "type_rule": "Type 0 unchanged; original types 1-4 merge into type 1, types 5-8 into type 2.",
+  "scenario_count": 12,
+  "cases": [
+    {
+      "scenario_id": "R01-D308",
+      "task_count": 52728179,
+      "total_tokens": 104925667361.0,
+      "type_counts": [
+        26364090,
+        14773928,
+        11590161
+      ],
+      "original_recipe": "../../R01-D308.sample.json",
+      "original_recipe_sha256": "361ca171a7b3864b0f259be0997f79aa52e692fa0dc30632314952ae36c167fc",
+      "recipe": "R01-D308.sample.json",
+      "recipe_sha256": "4f9647482d7234cfc84738b10d77395aac5bc764f39d59f26f03ee3206547e73",
+      "source_file": "R01-D308.tasks.csv.gz",
+      "source_sha256": "80e6136880eb0134c307100ba547c135cf6cd705fd162aa975ec3b5ae404e020",
+      "capacity_screen": "passed",
+      "draws_preserved": true,
+      "immediate_identities_preserved": true,
+      "slot_tokens_and_bills_preserved": true,
+      "exact_type_merge_verified": true
+    },
+    {
+      "scenario_id": "R02-D246",
+      "task_count": 251630645,
+      "total_tokens": 86125494292.0,
+      "type_counts": [
+        125815323,
+        72759452,
+        53055870
+      ],
+      "original_recipe": "../../R02-D246.sample.json",
+      "original_recipe_sha256": "3f6bee1092e2281c08d619f6a44580d47292c283a6e957b95c41e4062cc90f28",
+      "recipe": "R02-D246.sample.json",
+      "recipe_sha256": "b16225df588f48583e858dd00a958822f98eb91c2df618de9f400069de944487",
+      "source_file": "R02-D246.tasks.csv.gz",
+      "source_sha256": "e047d7fc2b879e42ee7774c15178bec2330f49ba4064a661f94e23f2ba42d97f",
+      "capacity_screen": "passed",
+      "draws_preserved": true,
+      "immediate_identities_preserved": true,
+      "slot_tokens_and_bills_preserved": true,
+      "exact_type_merge_verified": true
+    },
+    {
+      "scenario_id": "R03-D250",
+      "task_count": 260766925,
+      "total_tokens": 107855059557.0,
+      "type_counts": [
+        130383463,
+        75950768,
+        54432694
+      ],
+      "original_recipe": "../../R03-D250.sample.json",
+      "original_recipe_sha256": "04150e0fe4266ed2e0ee944ecc16766265469bdb4b6226c6a080427617102d63",
+      "recipe": "R03-D250.sample.json",
+      "recipe_sha256": "1b71d67a950e9a1162b99f48f11e39d4e2fc1be3150811e3434e851ed04b1a91",
+      "source_file": "R03-D250.tasks.csv.gz",
+      "source_sha256": "d75274ea162549764b3fb5fa4604a021d1c76e7929c767d9a2f01672ce90ce7d",
+      "capacity_screen": "passed",
+      "draws_preserved": true,
+      "immediate_identities_preserved": true,
+      "slot_tokens_and_bills_preserved": true,
+      "exact_type_merge_verified": true
+    },
+    {
+      "scenario_id": "R04-D325",
+      "task_count": 93218568,
+      "total_tokens": 100199378325.0,
+      "type_counts": [
+        46609284,
+        30863992,
+        15745292
+      ],
+      "original_recipe": "../../R04-D325.sample.json",
+      "original_recipe_sha256": "bc5f2961881eec6b084331996534918eab2065f2a1de1f6e249132a0d1cf5152",
+      "recipe": "R04-D325.sample.json",
+      "recipe_sha256": "e1407306ed8bb70d37bd3e5752fc23f02786fb4d90744e55a8233f49dc00d52c",
+      "source_file": "R04-D325.tasks.csv.gz",
+      "source_sha256": "30ecba67ec7d9f42e8013da063c5cc97ac39dbac23602864f5e4ca823e2c568a",
+      "capacity_screen": "passed",
+      "draws_preserved": true,
+      "immediate_identities_preserved": true,
+      "slot_tokens_and_bills_preserved": true,
+      "exact_type_merge_verified": true
+    },
+    {
+      "scenario_id": "R05-D333",
+      "task_count": 54981850,
+      "total_tokens": 78281171999.0,
+      "type_counts": [
+        27490925,
+        16638703,
+        10852222
+      ],
+      "original_recipe": "../../R05-D333.sample.json",
+      "original_recipe_sha256": "b5c54831247e5ab0ce5ebd2a7988aa7bdfc0dc5ccfd1d74a4172d2804b4c664d",
+      "recipe": "R05-D333.sample.json",
+      "recipe_sha256": "9dce65e7d1c1f0df7c40b2716c30a56ca0e630c75080782836db5769df9522b6",
+      "source_file": "tasks.csv.gz",
+      "source_sha256": "1cb96a4e82b0f6e459217f01cc787ed5e0bc64bd9984b615907ec668c52fddbd",
+      "capacity_screen": "passed",
+      "draws_preserved": true,
+      "immediate_identities_preserved": true,
+      "slot_tokens_and_bills_preserved": true,
+      "exact_type_merge_verified": true
+    },
+    {
+      "scenario_id": "R06-D307",
+      "task_count": 16618232,
+      "total_tokens": 84801497623.0,
+      "type_counts": [
+        8309116,
+        5532034,
+        2777082
+      ],
+      "original_recipe": "../../R06-D307.sample.json",
+      "original_recipe_sha256": "0403fcb17f66a82ac73bf94c1a21682c36a5d574920164a5ff2e8980d07c6843",
+      "recipe": "R06-D307.sample.json",
+      "recipe_sha256": "7f3aa8b764e9bf034aeb344ab2cecfdeacef8f4b918ad3f5abbcb2f0e2120a1c",
+      "source_file": "R06-D307.tasks.csv.gz",
+      "source_sha256": "adce1fdfcd83b62589571e7f69d77ae21d9ee036251662c6a327412f36ba7d02",
+      "capacity_screen": "passed",
+      "draws_preserved": true,
+      "immediate_identities_preserved": true,
+      "slot_tokens_and_bills_preserved": true,
+      "exact_type_merge_verified": true
+    },
+    {
+      "scenario_id": "R07-D272",
+      "task_count": 78318450,
+      "total_tokens": 81293413327.0,
+      "type_counts": [
+        39159225,
+        25232401,
+        13926824
+      ],
+      "original_recipe": "../../R07-D272.sample.json",
+      "original_recipe_sha256": "b9f444b9b48febc0434efd0458962665e2192dbaebcb91c36517064d33309e75",
+      "recipe": "R07-D272.sample.json",
+      "recipe_sha256": "0be6f6b343b64956af1ba9a62554a2fd7319964c94c1999f3d003f5405c13b48",
+      "source_file": "R07-D272.tasks.csv.gz",
+      "source_sha256": "a45b22d503bc2a96ae1ddbf0a345c7b8119c03b21747375363f91a9a9752dfe7",
+      "capacity_screen": "passed",
+      "draws_preserved": true,
+      "immediate_identities_preserved": true,
+      "slot_tokens_and_bills_preserved": true,
+      "exact_type_merge_verified": true
+    },
+    {
+      "scenario_id": "R08-D322",
+      "task_count": 193381695,
+      "total_tokens": 86311097439.0,
+      "type_counts": [
+        96690848,
+        53912148,
+        42778699
+      ],
+      "original_recipe": "../../R08-D322.sample.json",
+      "original_recipe_sha256": "8dd249fc2d7486c354863b90f598ae9f04de252dce36f8580b3b4977f6d3344f",
+      "recipe": "R08-D322.sample.json",
+      "recipe_sha256": "c07ce86a4af8c6ff01bfcb23e7fa653229d46b358bb53b7ca69bce8b59cdf40e",
+      "source_file": "R08-D322.tasks.csv.gz",
+      "source_sha256": "e9ef32367c5177ce21a14cc3568cc916a194c1d1074589eb4eefb2fc65da9eea",
+      "capacity_screen": "passed",
+      "draws_preserved": true,
+      "immediate_identities_preserved": true,
+      "slot_tokens_and_bills_preserved": true,
+      "exact_type_merge_verified": true
+    },
+    {
+      "scenario_id": "R09-D270",
+      "task_count": 266871440,
+      "total_tokens": 97162645833.0,
+      "type_counts": [
+        133435720,
+        78339288,
+        55096432
+      ],
+      "original_recipe": "../../R09-D270.sample.json",
+      "original_recipe_sha256": "4fea37e0bee5127094d02664f8f23ec353f220919cee12f6533815385e0494c4",
+      "recipe": "R09-D270.sample.json",
+      "recipe_sha256": "e4428298ffb41a51f0c46317199a3fdeed184e2203d2651c190972b9e29a583b",
+      "source_file": "R09-D270.tasks.csv.gz",
+      "source_sha256": "68c5ea1a253faa892c0ba959188b4a9babd4978c76f27cea626b6e8626ade302",
+      "capacity_screen": "passed",
+      "draws_preserved": true,
+      "immediate_identities_preserved": true,
+      "slot_tokens_and_bills_preserved": true,
+      "exact_type_merge_verified": true
+    },
+    {
+      "scenario_id": "R10-D310",
+      "task_count": 110523279,
+      "total_tokens": 77711608036.0,
+      "type_counts": [
+        55261640,
+        33017182,
+        22244457
+      ],
+      "original_recipe": "../../R10-D310.sample.json",
+      "original_recipe_sha256": "3075d23006af3b715a218cf89f5e60f00595a0e4af545350be7a7adeb273bafb",
+      "recipe": "R10-D310.sample.json",
+      "recipe_sha256": "6c18d68601f51c6cfaeefd3c30bd09c4326065ee6fcca5af85e0d13ff4bd9482",
+      "source_file": "R10-D310.tasks.csv.gz",
+      "source_sha256": "d29dd8bbb6f129038b10b609a1931c819df7437f88ff9dbc65f510f5591efd1d",
+      "capacity_screen": "passed",
+      "draws_preserved": true,
+      "immediate_identities_preserved": true,
+      "slot_tokens_and_bills_preserved": true,
+      "exact_type_merge_verified": true
+    },
+    {
+      "scenario_id": "R11-D228",
+      "task_count": 103747743,
+      "total_tokens": 78237226903.0,
+      "type_counts": [
+        51873872,
+        34048964,
+        17824907
+      ],
+      "original_recipe": "../../R11-D228.sample.json",
+      "original_recipe_sha256": "e4a3cd9ba2021ee83250dec5d20e265be06335877f42d8fc72df1a9794ec6581",
+      "recipe": "R11-D228.sample.json",
+      "recipe_sha256": "f3afc435f6df5892cfd0bf8aaabad25e9ff09c1b4c68d87ab2cf2f4c590182f4",
+      "source_file": "R11-D228.tasks.csv.gz",
+      "source_sha256": "afdb6d8d9f95d80c73fef13fff435d068df2a854ff11a3302fe71eadeb2a51ba",
+      "capacity_screen": "passed",
+      "draws_preserved": true,
+      "immediate_identities_preserved": true,
+      "slot_tokens_and_bills_preserved": true,
+      "exact_type_merge_verified": true
+    },
+    {
+      "scenario_id": "R12-D320",
+      "task_count": 201414335,
+      "total_tokens": 82586119581.0,
+      "type_counts": [
+        100707168,
+        57661311,
+        43045856
+      ],
+      "original_recipe": "../../R12-D320.sample.json",
+      "original_recipe_sha256": "b6474e8b0c9c2bae3c2ba6e7f8dd27fc2f664ff3c6b958b3fca628c240d16ae1",
+      "recipe": "R12-D320.sample.json",
+      "recipe_sha256": "fe46ef140513a1a755eb49d9d7722a351f7025a1c78319da050ef81dc108c300",
+      "source_file": "R12-D320.tasks.csv.gz",
+      "source_sha256": "da7a77b35e7e9b9837da7777cb65e7ba942edeb94a80c9bf7fd26d07762b311b",
+      "capacity_screen": "passed",
+      "draws_preserved": true,
+      "immediate_identities_preserved": true,
+      "slot_tokens_and_bills_preserved": true,
+      "exact_type_merge_verified": true
+    }
+  ],
+  "pre_existing_input_files_preserved": true
+}

@@ -1,0 +1,13 @@
+# Keep source and documentation portable across platforms.
+* text=auto eol=lf
+
+# Input recipes and experiment manifests verify exact file/configuration hashes.
+# Preserve the supplied bytes on Windows as well as Linux and macOS.
+/data/** -text
+/config/** -text
+
+*.gz binary
+*.zip binary
+*.png binary
+*.jpg binary
+*.pdf binary

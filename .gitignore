@@ -1,18 +1,60 @@
-# This .gitignore is appropriate for repositories deployed to GitHub Pages and using
-# a Gemfile as specified at https://github.com/github/pages-gem#conventional
+# Python environments and generated files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
 
-# Basic Jekyll gitignores (synchronize to Jekyll.gitignore)
+# Solver runs, experiment results, temporary files, and raw downloads
+results/
+output/
+tmp/
+raw_data/
+*.log
+*.tmp
+*.bak
+
+# Generated input visualizations (retain the plotting code)
+data_visualization/*.png
+data_visualization/*.pdf
+data_visualization/*.csv
+data_visualization/visualization_manifest.json
+data_visualization/planning_horizons/
+
+# Historical optimization/audit outputs
+data/workload_validation.json
+data/**/verification.json
+
+# Local editor and operating-system settings
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Existing GitHub Pages defaults
 _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
-
-# Additional Ruby/bundler ignore for when you run: bundle install
-/vendor
-
-# Specific ignore for GitHub Pages
-# GitHub Pages will always use its own deployed version of pages-gem
-# This means GitHub Pages will NOT use your Gemfile.lock and therefore it is
-# counterproductive to check this file into the repository.
-# Details at https://github.com/github/pages-gem/issues/768
+/vendor/
 Gemfile.lock
+
+# Versioned experiment archives are uploaded as GitHub Release assets.
+/release_assets/
+
+# Keep only the default example, input documentation, and manifests in Git.
+# Full experiment inputs remain on disk and can be restored by download_data.py.
+/data/**
+!/data/**/
+!/data/**/*.md
+!/data/**/*manifest.json
+!/data/energy_scenarios.csv
+!/data/R05-D333.sample.json
+!/data/representative_tasks_eight_types.csv.gz

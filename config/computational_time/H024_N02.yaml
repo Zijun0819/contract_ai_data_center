@@ -1,0 +1,71 @@
+inputs:
+  root: ../../data/computational_time/H024
+  workload_scenario_id: R05-D333
+  energy_scenario_id: D02
+  workload_file: ../../data/computational_time/H024/N02/workload.window.json
+  immediate_execution_share: 0.5
+  type_distribution: null
+parameters:
+  horizon_slots: 96
+  slot_seconds: 900
+  throughput_tokens_per_second_per_replica: 1000.0
+  installed_replicas: 4096
+  pue: 1.1
+  dynamic_energy_j_per_token: 1.4
+  idle_power_w_per_replica: 260.0
+  input_tariff_usd_per_million_tokens: 0.36
+  output_tariff_usd_per_million_tokens: 0.4
+  type_lambdas:
+  - 0.1
+  - 2.5
+  candidate_deferrals_slots:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 8
+  - 12
+  - 16
+  - 20
+  - 24
+  - 28
+  - 32
+  - 36
+  - 40
+  - 44
+  - 48
+  - 52
+  - 56
+  - 60
+  - 64
+  - 68
+  - 72
+  - 76
+  - 80
+  - 84
+  - 88
+  - 92
+  - 96
+  delay_curvature_per_hour: 0.25
+  maximum_discount: 0.5
+  ppa_cost_usd_per_kwh: 0.06
+  gas_turbine_cost_usd_per_kwh: 0.083333
+  pv_cost_usd_per_kwh: 0.0
+  bess_cost_usd_per_kwh_discharged: 0.02
+solver:
+  algorithm: benders
+  max_iterations: 500
+  absolute_gap_usd: 0.01
+  relative_gap: 1.0e-06
+  master_time_limit_seconds: 30.0
+  subproblem_time_limit_seconds: 30.0
+  total_time_limit_seconds: 300.0
+  master_mip_relative_gap: 0.0
+  token_scale: 1000000.0
+  feasibility_tolerance: 1.0e-07
+  add_monotonic_cuts: false
+  horizon_policy: finish_within_horizon
+output:
+  root: ../../results/computational_time
+  make_plot: false
+  write_group_schedule: false

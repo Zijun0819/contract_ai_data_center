@@ -1,0 +1,238 @@
+{
+  "schema": "type_count_experiment_v1",
+  "created_at_utc": "2026-10-01T18:54:19.231702+00:00",
+  "type_counts": [
+    2,
+    4,
+    6,
+    8,
+    10
+  ],
+  "cases": [
+    {
+      "type_count": 2,
+      "total_classes_including_immediate": 3,
+      "config": "../../config/type_counts/N02.yaml",
+      "type_lambdas": [
+        0.1,
+        2.5
+      ],
+      "task_count": 54981850,
+      "total_tokens": 78281171999.0,
+      "type_counts": [
+        27490925,
+        16638703,
+        10852222
+      ],
+      "actual_immediate_task_share": 0.5,
+      "capacity_screen": "passed"
+    },
+    {
+      "type_count": 4,
+      "total_classes_including_immediate": 5,
+      "config": "../../config/type_counts/N04.yaml",
+      "type_lambdas": [
+        0.1,
+        0.8999999999999999,
+        1.7,
+        2.5
+      ],
+      "task_count": 54981850,
+      "total_tokens": 78281171999.0,
+      "type_counts": [
+        27490925,
+        9401485,
+        7237218,
+        5725918,
+        5126304
+      ],
+      "actual_immediate_task_share": 0.5,
+      "capacity_screen": "passed"
+    },
+    {
+      "type_count": 6,
+      "total_classes_including_immediate": 7,
+      "config": "../../config/type_counts/N06.yaml",
+      "type_lambdas": [
+        0.1,
+        0.58,
+        1.06,
+        1.54,
+        2.02,
+        2.5
+      ],
+      "task_count": 54981850,
+      "total_tokens": 78281171999.0,
+      "type_counts": [
+        27490925,
+        6267657,
+        5546234,
+        4824812,
+        3817279,
+        3617407,
+        3417536
+      ],
+      "actual_immediate_task_share": 0.5,
+      "capacity_screen": "passed"
+    },
+    {
+      "type_count": 8,
+      "total_classes_including_immediate": 9,
+      "config": "../../config/type_counts/N08.yaml",
+      "type_lambdas": [
+        0.1,
+        0.44285714285714284,
+        0.7857142857142857,
+        1.1285714285714286,
+        1.4714285714285715,
+        1.8142857142857145,
+        2.157142857142857,
+        2.5
+      ],
+      "task_count": 54981850,
+      "total_tokens": 78281171999.0,
+      "type_counts": [
+        27490925,
+        4700743,
+        4700742,
+        3618609,
+        3618609,
+        2862959,
+        2862959,
+        2563152,
+        2563152
+      ],
+      "actual_immediate_task_share": 0.5,
+      "capacity_screen": "passed"
+    },
+    {
+      "type_count": 10,
+      "total_classes_including_immediate": 11,
+      "config": "../../config/type_counts/N10.yaml",
+      "type_lambdas": [
+        0.1,
+        0.3666666666666667,
+        0.6333333333333333,
+        0.9,
+        1.1666666666666667,
+        1.4333333333333333,
+        1.7000000000000002,
+        1.9666666666666668,
+        2.2333333333333334,
+        2.5
+      ],
+      "task_count": 54981850,
+      "total_tokens": 78281171999.0,
+      "type_counts": [
+        27490925,
+        3760595,
+        3760594,
+        3327740,
+        2894887,
+        2894887,
+        2290367,
+        2290367,
+        2170444,
+        2050522,
+        2050522
+      ],
+      "actual_immediate_task_share": 0.5,
+      "capacity_screen": "passed"
+    }
+  ],
+  "controlled_settings": {
+    "parameters": {
+      "horizon_slots": 96,
+      "slot_seconds": 900,
+      "throughput_tokens_per_second_per_replica": 1000.0,
+      "installed_replicas": 4096,
+      "pue": 1.1,
+      "dynamic_energy_j_per_token": 1.4,
+      "idle_power_w_per_replica": 260.0,
+      "input_tariff_usd_per_million_tokens": 0.36,
+      "output_tariff_usd_per_million_tokens": 0.4,
+      "candidate_deferrals_slots": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+        84,
+        88,
+        92,
+        96
+      ],
+      "delay_curvature_per_hour": 0.25,
+      "maximum_discount": 0.5,
+      "ppa_cost_usd_per_kwh": 0.06,
+      "gas_turbine_cost_usd_per_kwh": 0.083333,
+      "pv_cost_usd_per_kwh": 0.0,
+      "bess_cost_usd_per_kwh_discharged": 0.02
+    },
+    "solver": {
+      "algorithm": "benders",
+      "max_iterations": 500,
+      "absolute_gap_usd": 0.01,
+      "relative_gap": 1e-06,
+      "master_time_limit_seconds": 30.0,
+      "subproblem_time_limit_seconds": 30.0,
+      "total_time_limit_seconds": 300.0,
+      "master_mip_relative_gap": 0.0,
+      "token_scale": 1000000.0,
+      "feasibility_tolerance": 1e-07,
+      "add_monotonic_cuts": false,
+      "horizon_policy": "finish_within_horizon"
+    },
+    "inputs": {
+      "workload_scenario_id": "R05-D333",
+      "energy_scenario_id": "D02",
+      "immediate_execution_share": 0.5,
+      "type_distribution": null
+    }
+  },
+  "anchor_config_sha256": "45de9b6bd95936dd84360f12c0828971eccc6f9f15f165c638224e02909dc50f",
+  "anchor_recipe": "../R05-D333.sample.json",
+  "anchor_recipe_sha256": "b5c54831247e5ab0ce5ebd2a7988aa7bdfc0dc5ccfd1d74a4172d2804b4c664d",
+  "anchor_source": "../representative_tasks_eight_types.csv.gz",
+  "anchor_source_sha256": "ca4d69adb066507ce8d287b0446f9e92344376f3f2bde4d9ee69c06abfd39996",
+  "label_rule": "Ordered-bin overlap maps the existing participating groups to N groups; balanced integer rounding preserves each source count and predefined type totals. Immediate-copy identities are unchanged. Equal-count refinement is identity, so the existing eight-type labels are retained.",
+  "lambda_rule": "linspace(0.1, 2.5, N); N excludes immediate type 0",
+  "immediate_share_definition": "50% of sampled task occurrences, as in the default; the exact immediate-token trajectory is also held fixed, without imposing a 50% token share.",
+  "files": {
+    "N02/R05-D333.sample.json": "9dce65e7d1c1f0df7c40b2716c30a56ca0e630c75080782836db5769df9522b6",
+    "N04/R05-D333.sample.json": "5d3a3f655177e473467ffbec281dfd11364d5772eac1dcbe032aa65984eff196",
+    "N06/R05-D333.sample.json": "be0557c44f761baa483bb404614ea708bc588eabd72f71183a0bf2c9c0737224",
+    "N08/R05-D333.sample.json": "638f96869c5f97787b99723cd52414de76509d16f75e72ecf77b6378a100ee6f",
+    "N10/R05-D333.sample.json": "402b0cb2d0ca3699679a28f8af9f0d6217454040fa8d319f5ccad5aee41bfc9f",
+    "N02/tasks.csv.gz": "1cb96a4e82b0f6e459217f01cc787ed5e0bc64bd9984b615907ec668c52fddbd",
+    "N04/tasks.csv.gz": "6bf29f53ca45621192544b72c0b2985bd51b627ff6ddae02fab443765e753966",
+    "N06/tasks.csv.gz": "7ccd78e58b733b74a6a450249f58b58a0fa42d1a01ed02bd5c9030d65032dca4",
+    "N08/tasks.csv.gz": "e463e044f24ddd7e28805506a9c0a60b28a7b00992d09968629c11a26d0a5099",
+    "N10/tasks.csv.gz": "731e164ce26c753e2c7aee8e8162b39eff59a952c4732ad53c5115d9e90dd370",
+    "energy_scenarios.csv": "0552ec080da8a40b404a9486b869c5bbea7bd63451827cb901d24b5b63b28f51",
+    "type_distributions.csv": "a8a2dc67bee84b185f54482493e4140de9cc0491e0dfc21330d9e7e7dbce2b8d",
+    "../../config/type_counts/N02.yaml": "b3ddbb9cefded067b691348678e3f3e2a1e799e28807f5bf911d305b2d0f4336",
+    "../../config/type_counts/N04.yaml": "9d0318f25478055b0607d633c5a7fbca00c3b29334f33a6e741c71207b0438b5",
+    "../../config/type_counts/N06.yaml": "c90db268fd86be06c371aa85e711cb6185f0288cbd4ea50d8bcd0525b85ead9e",
+    "../../config/type_counts/N08.yaml": "e78f12f9252cad7d75f7e1e6368637da8823af0e404be8975074b930ead0b82b",
+    "../../config/type_counts/N10.yaml": "43084d4ea74e666790a990d9da7c5c287e96f5d7b07f94623250ca0ae97e2725"
+  }
+}
